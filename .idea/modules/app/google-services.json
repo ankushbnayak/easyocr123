@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1095909836181",
+    "firebase_url": "https://easyocr123.firebaseio.com",
+    "project_id": "easyocr123",
+    "storage_bucket": "easyocr123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095909836181:android:3f0b637d07d641215f229c",
+        "android_client_info": {
+          "package_name": "com.example.easyocr123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095909836181-o4v4mpnsttgr1o10piear6ls0hpj3g2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.easyocr123",
+            "certificate_hash": "751e8a24f7182bc985970d75b369aef79e333925"
+          }
+        },
+        {
+          "client_id": "1095909836181-en7qtodnf0ijjn2rk5mbhbs0ushcu37r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8O4q4WqpTiifjAnDGOfQgbe9ZUkagvA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095909836181-en7qtodnf0ijjn2rk5mbhbs0ushcu37r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

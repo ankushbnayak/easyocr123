@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "653571343711",
+    "firebase_url": "https://easyocr123-c3ad9.firebaseio.com",
+    "project_id": "easyocr123-c3ad9",
+    "storage_bucket": "easyocr123-c3ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653571343711:android:c39c05852597f71f80a2ea",
+        "android_client_info": {
+          "package_name": "com.example.easyocr123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653571343711-7j1dlik9arnct2g5trsortv4n434gpi3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlhy5J-Ig-nY5lNDd4gN5Z8z-rXSq5BN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653571343711-7j1dlik9arnct2g5trsortv4n434gpi3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
