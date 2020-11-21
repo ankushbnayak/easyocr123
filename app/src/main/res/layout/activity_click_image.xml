@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClickImage">
+    android:orientation="vertical" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dip"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imgView"
+        />
+<LinearLayout
+android:layout_marginTop="30dp"
+android:gravity="center"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<Button
+    android:background="@drawable/ic_baseline_camera_24"
+    android:id="@+id/button_click"
+    android:onClick="onBackClick"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    />
+</LinearLayout>
+</LinearLayout>
+

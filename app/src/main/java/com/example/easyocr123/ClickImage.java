@@ -1,29 +1,55 @@
 package com.example.easyocr123;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.ActionBar;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.RadioButton;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class ClickImage extends AppCompatActivity {
+
+    public static int cameraID = 0;
+    public static boolean isBlack = true;
+    public static ImageView image;
     FirebaseAuth firebaseAuth;
     FirebaseUser user;
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_click_image);
+        image = (ImageView) findViewById(R.id.imgView);
+    }
 
-        }
 
+    Handler h =new Handler();
+
+    public void onBackClick(View v){
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                isBlack = true;
+                cameraID = 0;
+                Intent i = new Intent(ClickImage.this,CameraView.class);
+                startActivityForResult(i, 999);
+                h.postDelayed(this,4000);
+
+            }
+        },4000);
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.commanmenu,menu);
@@ -57,4 +83,5 @@ public class ClickImage extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
