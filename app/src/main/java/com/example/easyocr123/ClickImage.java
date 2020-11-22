@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,6 +50,12 @@ public class ClickImage extends AppCompatActivity {
             }
         },4000);
 
+    }
+    public void onEndClick(View v)
+    {
+        isBlack=false;
+        h.removeCallbacksAndMessages(null);
+        Toast.makeText(this, "Detection stopped", Toast.LENGTH_SHORT).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
